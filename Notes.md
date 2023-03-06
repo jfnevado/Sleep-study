@@ -4,6 +4,8 @@ El sueño se divide en 3 fases, o tres tipos, ligero, profundo y REM, siendo est
 
 La calidad la vamos a medir en función de tres valores, porcentage del tiempo que pasamos durmiendo, porcentage de sueño que es profundo (REM) y veces que nos despertamos durante la noche.
 
+PUntualizar que para estudiar mejor la data he creado una nueva columna con los valores reales extraidos de los porcentages. 
+
 Cómo influye la duración del sueño en la calidad?
 
 Impacto que tienen los facores externos en la calidad del sueño.
