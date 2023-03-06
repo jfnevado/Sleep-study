@@ -1,5 +1,7 @@
 Preguntas
 
+El sueño se divide en 3 fases, o tres tipos, ligero, profundo y REM, siendo este último el más importante. Analizando la data podemso observar que el sueño REM es el que menos varia. P
+
 La calidad la vamos a medir en función de tres valores, porcentage del tiempo que pasamos durmiendo, porcentage de sueño que es profundo (REM) y veces que nos despertamos durante la noche.
 
 Cómo influye la duración del sueño en la calidad?
