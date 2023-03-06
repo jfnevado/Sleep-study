@@ -334,3 +334,23 @@ SELECT
 INTO PortfolioProject.dbo.SleepSmokingStatus
 FROM PortfolioProject.dbo.Sleep
 GROUP BY [Smoking status];
+
+SELECT [Exercise frequency], SUM(Awakenings) AS Awakenings
+INTO PortfolioProject.dbo.Exercise
+FROM PortfolioProject.dbo.Sleep
+GROUP BY [Exercise frequency];
+
+SELECT [Alcohol consumption], SUM(Awakenings) AS Awakenings
+INTO PortfolioProject.dbo.Alcohol
+FROM PortfolioProject.dbo.Sleep
+GROUP BY [Alcohol consumption];
+
+SELECT [Smoking status], SUM(Awakenings) AS Awakenings
+INTO PortfolioProject.dbo.Smoking
+FROM PortfolioProject.dbo.Sleep
+GROUP BY [Smoking status];
+
+SELECT [Caffeine consumption], SUM(Awakenings) AS Awakenings
+INTO PortfolioProject.dbo.Caffeine
+FROM PortfolioProject.dbo.Sleep
+GROUP BY [Caffeine consumption];
