@@ -67,41 +67,40 @@ Como influyen los factores externos en el sueño, no sin antes recordar que el s
 
 Así es como influyen en la calidad de sueño los siguientes factores externos:
 
-Alcohol:
+#### Alcohol:
  - Es el que más afecta a la calidad de sueño.
  - Reduce considerablemente el sueño profundo, en beneficio del sueño ligero.
  - Aumenta la cantidad de interrupciones del sueño.
 
-Tabaco:
+#### Tabaco:
  - Aumenta las interrupciones del sueño en la misma medida que el alcohol.
  - Reduce el sueño profundo, en menor medida que el alcohol.
 
-
-Cafeína:
+#### Cafeína:
  - Contraintuitivamente mejora el sueño, aunque esto puede deberse a que la muestra de consumidores de café es muy 
 
-Ejercicio:
+#### Ejercicio:
  - Tiene un efecto muy positivo con la mejora del sueño.
  - Reduce los despertares y aumenta el sueño profundo.
  - La diferencia se hace realmente notable en la gente que practica mucho deporte.
  - Aún así, en general, su impacto no es tan significativo como el del alcohol.
 
-**-Alcohol**
+**Alcohol**
 ![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
 
-**-Tabaco**
+**Tabaco**
 ![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
 
-**-Cafeina**
+**Cafeina**
 ![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
 
-**-Ejercicio**
+**Ejercicio**
 ![ejercicio](https://github.com/jfnevado/Sleep-study/blob/master/plots/exercise.png)
 
-**-Correlación**
+**Correlación**
 ![correlacion_externa](https://github.com/jfnevado/Sleep-study/blob/master/plots/externalcorrelation.png)
 
-**-Despertares**
+**Despertares**
 ![despertares](https://github.com/jfnevado/Sleep-study/blob/master/plots/awakenings_external.png)
 
 ### -Factores demográficos
