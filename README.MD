@@ -5,7 +5,7 @@
 
 ## Introdución 
 
-La idea de realizar este análisis nace del libro Saludable Mente, de Marcos Vázquez, que aprovecho para recomendar, un gran libro. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
+La idea de realizar este análisis nace del libro Saludable Mente de Marcos Vázquez, un gran libro que aprovecho para recomendar. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
 
 Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados son bastante coherentes con lo que conocemos del descanso.
 
