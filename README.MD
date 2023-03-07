@@ -3,78 +3,130 @@
 ## Author
 [@jfnevado](https://github.com/jfnevado)
 
+## Introdución 
+
+La idea de realizar este análisis nace del libro Saludable Mente, de Marcos Vázquez, que aprovecho para recomendar. Es un gran libro y entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
+
+Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados parecen bastante coherentes.
+
+Para terminar la introducción voy a citar a Marcos:
+> El sueño sigue siendo un gran misterio. Evolutivamente parece tener poco sentido. Mientras dormimos, no podemos cazar ni reproducirnos. Somos vulnerables a depredadores y a todo tipo de invasores. Y sin embargo, todos los animales duermen. O bien el sueño es el mayor error de la evolución o es tan importante que compensó con creces todos los riesgos que implicaba.
+
 ## Descripción
 
-There are rumors that alpha calls for the High and QC tokens were being given in a community. Both tokens belong to similar projects (metaverse gamefi) and have had a similar performance in recent days, contrary to the general market movement. These are more than enough reasons to conduct an investigation and determine if the rumors are true. 
+El sueño consta de tres fases:
+- Sueño ligero
+- Sueño profundo
+- Sueño REM
 
-Additionally, GQ is a token that I have been wanting to investigate more deeply. After 1 year with the project and the vesting about to end, it was the perfect time to check the status of it and study the patterns of its holders.
+El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad.
 
-![price-gq](https://github.com/jfnevado/Outer-ring/blob/master/plots/gq-busd.png)
-![price-high](https://github.com/jfnevado/Outer-ring/blob/master/plots/high-busd.png)
+Para determinar la calidad de sueño vamos a medir la cantida de sueño profundo y el número de interrupciones que se producen. Aunque el factor más importante del sueño es la fase REM, como veremos más adelante, esta fase practicamente se ve afectada por otros factores, incluso la duración del sueño.
 
-Note: There is one file for each branch of the analysis to enhance readability and make it more accessible for future investigations.
+Es importante aclarar que solo podemos cuantificar como afectan a la duración de estas fases, pero no a su calidad.
 
-## Steps
-- Data retrieval through APIs
-  - BSC Api
-  - CoinGecko
-- Data cleaning
-- Data transformation
-- Data visualization
+## Procesos
 
-## Comparative Conclusion
+- Recolección de la data
+  - SQL
 
-Hipothesis: there are alpha groups doing calls of both tokens, making them perform quite close.
+- Limpieza de la data
+  - SQL
+  - Python
+  
+- Transformación de la data
+  - Python
+  
+- Visualización
+  - Python
 
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/comparative-price.png)
+- Dashboard
+  - PowerBI
 
-Results: only 2.12% of the wallets bought both tokens.
+## Análisis y conclusiones
 
-| Token | Wallets |
-|-------|---------|
-| GQ    | 987     |
-| HIGH  | 1507    |
-| Ambos | 53      |
+**-Sueño REM**
+A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectado por factores externos, incluso tiende a tener la misma duración independientemente de la duración del sueño.
 
-We can conclude this was pure coincidence, these tokens perform besides being opposite to the whole market performance has nothing in coomon. 
+![density](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_metrics.png)
+![density_percentual](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_percentual.png)
+![kdrem](https://github.com/jfnevado/Sleep-study/blob/master/plots/kderem.png)
 
-## Analysis Conclusion
-### Points
-- Balance and transactions
-- Day activity
-- Group distribution
-- Seed investors
+**-Sueño profundo y ligero**
+Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mostrando una correlación enorme.
 
-### [Balance and transactions](../master/price-balance-count.ipynb)
+![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
+![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot2.png)
+![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot3.png)
 
-With the balance flow, we want to see the relationship between people selling tokens and buying them. And we can observe that at the launch of the token, besides the pump of the token, the inflow was low relative to the token vesting sellers. As a result, it managed to pump due to the low volume of tokens in circulation.
+**-Factores externos**
+Como influyen los factores externos en el sueño, no sin antes recordar que el sueño REM prácticamente no se ve afectado por ellos, pero si el sueño profundo y ligero, que estan directamente relacionados, al igual que la cantidad de interrupciones del sueño.
 
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/comparative-price-balance-tx.png)
+Así es como influyen en la calidad de sueño los siguientes factores externos:
 
-### [Day activity](../master/day_of_week.ipynb)
+Alcohol:
+ - Es el que más afecta a la calidad de sueño.
+ - Reduce considerablemente el sueño profundo, en beneficio del sueño ligero.
+ - Aumenta la cantidad de interrupciones del sueño.
 
-The activity is quite similar during the whole week but we can see a big positive flow during the sundays.
+Tabaco:
+ - Aumenta las interrupciones del sueño en la misma medida que el alcohol.
+ - Reduce el sueño profundo, en menor medida que el alcohol.
 
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/tx-by-days-names.png)
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/tx-balance-by-days-names.png)
 
-### [Group distribution](../master/whales.ipynb)
+Cafeína:
+ - Contraintuitivamente mejora el sueño, aunque esto puede deberse a que la muestra de consumidores de café es muy 
 
-We can see that the majority of the tokens are in the staking, and the pressure from ventures/investors will end soon
+Ejercicio:
+ - Tiene un efecto muy positivo con la mejora del sueño.
+ - Reduce los despertares y aumenta el sueño profundo.
+ - La diferencia se hace realmente notable en la gente que practica mucho deporte.
+ - Aún así, en general, su impacto no es tan significativo como el del alcohol.
 
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/wallet-type-balance.png)
+![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
+![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
+![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
+![ejercicio](https://github.com/jfnevado/Sleep-study/blob/master/plots/exercise.png)
+![correlacion_externa](https://github.com/jfnevado/Sleep-study/blob/master/plots/externalcorrelation.png)
+![despertares](https://github.com/jfnevado/Sleep-study/blob/master/plots/awakenings_external.png)
 
-![price-comparative](https://github.com/jfnevado/Outer-ring/blob/master/plots/wallet-type-send-recibe-tx.png)
+**-Factores demográficos**
+He creado gruops de edad para sacar conclusiones más relevantes, diferenciando menores de 20, de 20 a 40, de 40 a 60 y mayores de 60.
 
-### [Seed investors](../master/seed-hold.ipynb)
+Los que más duermen son los menores de 20, que a su vez son los menos eficientes. Por el contrario tenemos a la franja entre los 40 y 60 años, que son los que menos duermen y los más eficaces.
 
-Traking ventures dispensers and claims contract we can observe that only 17.97% of the seed investers sold their tokens, 3.84% of them are steaked and 7.91% even bought more.
+![edad](https://github.com/jfnevado/Sleep-study/blob/master/plots/age.png)
 
-## Conclusion
+Por género no hay ninguna diferencia.
+![genero](https://github.com/jfnevado/Sleep-study/blob/master/plots/gender.png)
 
-During this whole year all proyects estrugled but GQ holders keep trusting it and acumulating, the great performance of the stake speak itself. The sidelining phase ended and with the recent news it's starting to get traction again.
+**-Factores temporales**
 
-Nothing extrange had been discover and we can assure Galactiq Quadrant token is quite healthy. 
+En cuanto a la importancia del día podemos ver como el lunes es el día que más se duerme, y el viernes el que menos. En cuanto a eficiencia destaca el sábado.
+
+![día](https://github.com/jfnevado/Sleep-study/blob/master/plots/day.png)
+
+**-Generales**
+
+Vamos a analizar la mediana al ser mas representativa de los datos.
+Eficiencia del sueño 82.0%.
+
+Duración del sueño 7 horas y 30 minutos, siendo 1 hora y 41 minutos de sueño REM,
+4 horas y 16 minutos de sueño profundo y finalmente, 1 hora y 22 minutos de sueño ligero.
+ 
+Durante este tiempo lo normal es que se produzcan 1.0 interrupciones del sueño, pasando
+1 hora y 17 minutos despiertos.
+
+Buscando como mejorar la eficiencia de nuestro sueño, y tener el mejor descanso posible, podemos ver que la franja horaria en la que mejor se descansa es entre las 7 y 8 horas. Podemos observar como a partir de las 8 horas se produce un decrimento en la calidad del sueño, por lo que aumentar las horas de sueño no siempre tiene porque ser beneficioso. 
+
+![eficiciencia-tiempo](https://github.com/jfnevado/Sleep-study/blob/master/plots/kdesleep.png)
+
+
+## [Dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.pdf)
+![dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.png)
+
+## Paleta de color
+![color_palette](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/colorpalette.png)
 
 ## Run Locally
 Initialize git
@@ -87,13 +139,13 @@ git init
 Clone the project
 
 ```bash
-git clone https://github.com/jfnevado/Outer-ring
+git clone https://github.com/jfnevado/Sleep-study
 ```
 
 enter the project directory
 
 ```bash
-cd Outer-ring
+cd Sleep-study
 ```
 
 Create a python virtual environment 
@@ -102,7 +154,7 @@ Create a python virtual environment
 python -m venv <env_name>
 ```
 
-Activate the conda environment
+Activate the conda/python environment
 
 ```bash
 path\<env_name>\Script\activate
@@ -119,3 +171,7 @@ List all the packages installed
 ```bash
 pip freeze
 ```
+
+
+#### [Archivo SQL](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
+#### [Archivo Python](https://github.com/jfnevado/Sleep-study/blob/master/main.ipynb)
