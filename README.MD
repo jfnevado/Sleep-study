@@ -28,23 +28,18 @@ Es importante aclarar que solo podemos cuantificar como afectan a la duración d
 ## Procesos
 
 - Recolección de la data
-  - [SQL](#archivo-sql)
-
 - Limpieza de la data
-  - [SQL](#archivo-sql)
-  - [Python](#archivo-python)
-  
 - Transformación de la data
-  - [Python](#archivo-python)
-  
 - Visualización
-  - [Python](#archivo-python)
+- Dashboard  
+  
+## Herramientas usadas
 
-- Dashboard
+  - [SQL](#archivo-sql)/SSMS
+  - [Python](#archivo-python)
   - [PowerBI](#dashboard)
 
 ## Análisis y conclusiones
-
 ### -Sueño REM
 
 A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectado por factores externos, incluso tiende a tener la misma duración independientemente de la duración del sueño.
