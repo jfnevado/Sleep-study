@@ -54,6 +54,7 @@ A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectad
 ![kdrem](https://github.com/jfnevado/Sleep-study/blob/master/plots/kderem.png)
 
 **-Sueño profundo y ligero**
+
 Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mostrando una correlación enorme.
 
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
@@ -61,6 +62,7 @@ Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mo
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot3.png)
 
 **-Factores externos**
+
 Como influyen los factores externos en el sueño, no sin antes recordar que el sueño REM prácticamente no se ve afectado por ellos, pero si el sueño profundo y ligero, que estan directamente relacionados, al igual que la cantidad de interrupciones del sueño.
 
 Así es como influyen en la calidad de sueño los siguientes factores externos:
@@ -92,6 +94,7 @@ Ejercicio:
 ![despertares](https://github.com/jfnevado/Sleep-study/blob/master/plots/awakenings_external.png)
 
 **-Factores demográficos**
+
 He creado gruops de edad para sacar conclusiones más relevantes, diferenciando menores de 20, de 20 a 40, de 40 a 60 y mayores de 60.
 
 Los que más duermen son los menores de 20, que a su vez son los menos eficientes. Por el contrario tenemos a la franja entre los 40 y 60 años, que son los que menos duermen y los más eficaces.
