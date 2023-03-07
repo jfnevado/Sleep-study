@@ -28,20 +28,20 @@ Es importante aclarar que solo podemos cuantificar como afectan a la duración d
 ## Procesos
 
 - Recolección de la data
-  - SQL
+  - [SQL](#archivo-sql)
 
 - Limpieza de la data
-  - SQL
-  - Python
+  - [SQL](#archivo-sql)
+  - [Python](#archivo-python)
   
 - Transformación de la data
-  - Python
+  - [Python](#archivo-python)
   
 - Visualización
-  - Python
+  - [Python](#archivo-python)
 
 - Dashboard
-  - PowerBI
+  - [PowerBI](#dashboard)
 
 ## Análisis y conclusiones
 
