@@ -1,6 +1,6 @@
 # Análisis del sueño
 
-## Author
+## Autor
 [@jfnevado](https://github.com/jfnevado)
 
 ## Introdución 
@@ -54,14 +54,14 @@ A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectad
 ![kdrem](https://github.com/jfnevado/Sleep-study/blob/master/plots/kderem.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
 
-#### -Sueño profundo y ligero
+### -Sueño profundo y ligero
 
 Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mostrando una correlación enorme.
 
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot2.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot3.png)
 
-#### -Factores externos
+### -Factores externos
 
 Como influyen los factores externos en el sueño, no sin antes recordar que el sueño REM prácticamente no se ve afectado por ellos, pero si el sueño profundo y ligero, que estan directamente relacionados, al igual que la cantidad de interrupciones del sueño.
 
@@ -86,14 +86,25 @@ Ejercicio:
  - La diferencia se hace realmente notable en la gente que practica mucho deporte.
  - Aún así, en general, su impacto no es tan significativo como el del alcohol.
 
+**-Alcohol**
 ![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
+
+**-Tabaco**
 ![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
+
+**-Cafeina**
 ![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
+
+**-Ejercicio**
 ![ejercicio](https://github.com/jfnevado/Sleep-study/blob/master/plots/exercise.png)
+
+**-Correlación**
 ![correlacion_externa](https://github.com/jfnevado/Sleep-study/blob/master/plots/externalcorrelation.png)
+
+**-Despertares**
 ![despertares](https://github.com/jfnevado/Sleep-study/blob/master/plots/awakenings_external.png)
 
-**-Factores demográficos**
+### -Factores demográficos
 
 He creado gruops de edad para sacar conclusiones más relevantes, diferenciando menores de 20, de 20 a 40, de 40 a 60 y mayores de 60.
 
@@ -104,16 +115,17 @@ Los que más duermen son los menores de 20, que a su vez son los menos eficiente
 Por género no hay ninguna diferencia.
 ![genero](https://github.com/jfnevado/Sleep-study/blob/master/plots/gender.png)
 
-**-Factores temporales**
+### -Factores temporales
 
 En cuanto a la importancia del día podemos ver como el lunes es el día que más se duerme, y el viernes el que menos. En cuanto a eficiencia destaca el sábado.
 
 ![día](https://github.com/jfnevado/Sleep-study/blob/master/plots/day.png)
 
-**-Generales**
+### -Generales
 
 Vamos a analizar la mediana al ser mas representativa de los datos.
-Eficiencia del sueño 82.0%.
+
+La eficiencia del sueño es del  82.0%.
 
 Duración del sueño 7 horas y 30 minutos, siendo 1 hora y 41 minutos de sueño REM,
 4 horas y 16 minutos de sueño profundo y finalmente, 1 hora y 22 minutos de sueño ligero.
@@ -129,6 +141,9 @@ Buscando como mejorar la eficiencia de nuestro sueño, y tener el mejor descanso
 ## [Dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.pdf)
 ![dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.png)
 
+## [Archivo SQL](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
+
+## [Archivo Python](https://github.com/jfnevado/Sleep-study/blob/master/main.ipynb)
 ## Paleta de color
 ![color_palette](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/colorpalette.png)
 
@@ -175,7 +190,3 @@ List all the packages installed
 ```bash
 pip freeze
 ```
-
-
-#### [Archivo SQL](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
-#### [Archivo Python](https://github.com/jfnevado/Sleep-study/blob/master/main.ipynb)
