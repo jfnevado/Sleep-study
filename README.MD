@@ -72,29 +72,22 @@ Así es como influyen en la calidad de sueño los siguientes factores externos:
  - Reduce considerablemente el sueño profundo, en beneficio del sueño ligero.
  - Aumenta la cantidad de interrupciones del sueño.
 
+![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
 #### Tabaco:
  - Aumenta las interrupciones del sueño en la misma medida que el alcohol.
  - Reduce el sueño profundo, en menor medida que el alcohol.
 
+![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
 #### Cafeína:
  - Contraintuitivamente mejora el sueño, aunque esto puede deberse a que la muestra de consumidores de café es muy 
 
+![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
 #### Ejercicio:
  - Tiene un efecto muy positivo con la mejora del sueño.
  - Reduce los despertares y aumenta el sueño profundo.
  - La diferencia se hace realmente notable en la gente que practica mucho deporte.
  - Aún así, en general, su impacto no es tan significativo como el del alcohol.
 
-**Alcohol**
-![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
-
-**Tabaco**
-![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
-
-**Cafeina**
-![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
-
-**Ejercicio**
 ![ejercicio](https://github.com/jfnevado/Sleep-study/blob/master/plots/exercise.png)
 
 **Correlación**
