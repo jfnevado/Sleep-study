@@ -5,9 +5,9 @@
 
 ## Introdución 
 
-La idea de realizar este análisis nace del libro Saludable Mente, de Marcos Vázquez, que aprovecho para recomendar. Es un gran libro y entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
+La idea de realizar este análisis nace del libro Saludable Mente, de Marcos Vázquez, que aprovecho para recomendar, un gran libro. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
 
-Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados parecen bastante coherentes.
+Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados son bastante coherentes con lo que conocemos del descanso.
 
 Para terminar la introducción voy a citar a Marcos:
 > El sueño sigue siendo un gran misterio. Evolutivamente parece tener poco sentido. Mientras dormimos, no podemos cazar ni reproducirnos. Somos vulnerables a depredadores y a todo tipo de invasores. Y sin embargo, todos los animales duermen. O bien el sueño es el mayor error de la evolución o es tan importante que compensó con creces todos los riesgos que implicaba.
@@ -19,7 +19,7 @@ El sueño consta de tres fases:
 - Sueño profundo
 - Sueño REM
 
-El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad.
+El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad. A su vez intentaremos dar respuesta a preguntas como, ¿cuántas horas es recomendable dormir?
 
 Para determinar la calidad de sueño vamos a medir la cantida de sueño profundo y el número de interrupciones que se producen. Aunque el factor más importante del sueño es la fase REM, como veremos más adelante, esta fase practicamente se ve afectada por otros factores, incluso la duración del sueño.
 
@@ -46,6 +46,7 @@ Es importante aclarar que solo podemos cuantificar como afectan a la duración d
 ## Análisis y conclusiones
 
 **-Sueño REM**
+
 A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectado por factores externos, incluso tiende a tener la misma duración independientemente de la duración del sueño.
 
 ![density](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_metrics.png)
