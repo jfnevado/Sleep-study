@@ -45,23 +45,23 @@ Es importante aclarar que solo podemos cuantificar como afectan a la duración d
 
 ## Análisis y conclusiones
 
-**-Sueño REM**
+### -Sueño REM
 
 A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectado por factores externos, incluso tiende a tener la misma duración independientemente de la duración del sueño.
 
 ![density](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_metrics.png)
 ![density_percentual](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_percentual.png)
 ![kdrem](https://github.com/jfnevado/Sleep-study/blob/master/plots/kderem.png)
+![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
 
-**-Sueño profundo y ligero**
+#### -Sueño profundo y ligero
 
 Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mostrando una correlación enorme.
 
-![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot2.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot3.png)
 
-**-Factores externos**
+#### -Factores externos
 
 Como influyen los factores externos en el sueño, no sin antes recordar que el sueño REM prácticamente no se ve afectado por ellos, pero si el sueño profundo y ligero, que estan directamente relacionados, al igual que la cantidad de interrupciones del sueño.
 
