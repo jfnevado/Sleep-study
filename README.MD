@@ -33,6 +33,7 @@ Es importante aclarar que solo podemos cuantificar como afectan a la duración d
 - Visualización
 - Dashboard  
   
+En la transformación de la data se han creado nuevas columnas para obtener el sueño neto y poder hacer un análisis más profundo, gracias a esto se han descubierto patrones particulares en el comportamiento del sueño REM. También se han añadido clasificaciones por rangos de edades para obtener resultados más significativos.
 ## Herramientas usadas
 
   - [SQL](#archivo-sql)/SSMS
