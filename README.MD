@@ -5,7 +5,7 @@
 
 ## Introdución 
 
-La idea de realizar este análisis nace del libro Saludable Mente de Marcos Vázquez, un gran libro que aprovecho para recomendar. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso.
+La idea de realizar este análisis surge al leerme el libro Saludable Mente de Marcos Vázquez, libro que aprovecho para recomendar. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso. Así que me entró la curiosidad por confirmar puntos de los que habla en el libro y aprender más sobre el sueño y como es afectado por otros factores.
 
 Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados son bastante coherentes con lo que conocemos del descanso.
 
@@ -19,7 +19,7 @@ El sueño consta de tres fases:
 - Sueño profundo
 - Sueño REM
 
-El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad. A su vez intentaremos dar respuesta a preguntas como, ¿cuántas horas es recomendable dormir?
+El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad. A su vez intentaremos dar respuesta a preguntas como, ¿Cuántas horas es recomendable dormir?¿Puede ser contraproducente dormir más?
 
 Para determinar la calidad de sueño vamos a medir la cantida de sueño profundo y el número de interrupciones que se producen. Aunque el factor más importante del sueño es la fase REM, como veremos más adelante, esta fase practicamente se ve afectada por otros factores, incluso la duración del sueño.
 
