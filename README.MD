@@ -1,127 +1,127 @@
-# Análisis del sueño
+# Sleep Analisys
 
-## Autor
+## Author
 [@jfnevado](https://github.com/jfnevado)
+Para acceder a la versión en Español ---> [README](https://github.com/jfnevado/Sleep-study/blob/master/README_ESP.MD)
 
-## Introdución 
+## Introduction 
 
-La idea de realizar este análisis surge al leerme el libro Saludable Mente de Marcos Vázquez, libro que aprovecho para recomendar. Entre otros temas habla sobre la importancia física y psicológica de un buen descanso. Así que me entró la curiosidad por confirmar puntos de los que habla en el libro y aprender más sobre el sueño y como es afectado por otros factores.
+The idea of this analisys comes in mind after reading the book Saludable Mente of Marcos Vázquez, book which i recommend. The book discusses various topics related to brain health and emphasizes the importance of getting a good night's sleep for physical and psychological well-being. This piqued my curiosity and led me to want to confirm the points made in the book, learn more about sleep and see how it is affected by external factors.
 
-Antes de nada me gustaría aclarar que no puedo confirmar la calidad del origen de la data, aún así se ha tratado lo mejor posible y los resultados son bastante coherentes con lo que conocemos del descanso.
+I wanted to clarify that I cannot verify the quality of the data and its origin. However, the results are consistent with our knowledge about sleep.
 
-Para terminar la introducción voy a citar a Marcos:
-> El sueño sigue siendo un gran misterio. Evolutivamente parece tener poco sentido. Mientras dormimos, no podemos cazar ni reproducirnos. Somos vulnerables a depredadores y a todo tipo de invasores. Y sin embargo, todos los animales duermen. O bien el sueño es el mayor error de la evolución o es tan importante que compensó con creces todos los riesgos que implicaba.
+Finally, I wanted to quote Marcos:
+> Sleep is still a big mystery. From an evolutionary perspective, it seems to make little sense. While we're sleeping, we cannot hunt or reproduce. We're vulnerable to predators and other risks. However, all animals sleep. Either sleep is the biggest mistake in evolution or its importance is so great that it more than compensates for all the risks involved.
 
-## Descripción
+## Description
 
-El sueño consta de tres fases:
-- Sueño ligero
-- Sueño profundo
-- Sueño REM
+Sleep has three phases:
+- Light sleep
+- Deep sleep
+- REM sleep
 
-El objetivo de este estudio es encontrar como se desarrollan estas diferntes fases y el impacto que tienen en el sueño otros factores, como el ejercicio, el consumo de alcohol o la edad. A su vez intentaremos dar respuesta a preguntas como, ¿Cuántas horas es recomendable dormir?¿Puede ser contraproducente dormir más?
+My focus in this study is to find how this phases works and the impact other factors had on them, like exercise, alcohol or age. Additionally, I will try to answer other questions, such as how many hours we should sleep and whether sleeping more hours could have negative effects.
 
-Para determinar la calidad de sueño vamos a medir la cantida de sueño profundo y el número de interrupciones que se producen. Aunque el factor más importante del sueño es la fase REM, como veremos más adelante, esta fase practicamente se ve afectada por otros factores, incluso la duración del sueño.
+There is no metric to determine sleep quality, so I will use other metrics to evaluate it, such as deep sleep and sleep interruptions. Although REM sleep is the most important phase, it is not affected by other factors, including sleep duration.
 
-Es importante aclarar que solo podemos cuantificar como afectan a la duración de estas fases, pero no a su calidad.
+It's important to clarify that we can measure the duration of these phases, but not their quality.
+## Process
 
-## Procesos
-
-- Recolección de la data
-- Limpieza de la data
-- Transformación de la data
-- Visualización
+- Data extraction
+- Data cleaning
+- Data transformation
+- Visualization
 - Dashboard  
   
-En la transformación de la data se han creado nuevas columnas para obtener el sueño neto y poder hacer un análisis más profundo, gracias a esto se han descubierto patrones particulares en el comportamiento del sueño REM. También se han añadido clasificaciones por rangos de edades para obtener resultados más significativos.
-## Herramientas usadas
+During the data transformation, I created new columns to calculate the "net" sleep and perform a deeper analysis. Thanks to this data, I discovered new patterns in REM sleep. Additionally, I added age ranges.
+## Used tools
 
   - [SQL](#archivo-sql)/SSMS
   - [Python](#archivo-python)
   - [PowerBI](#dashboard)
 
-## Análisis y conclusiones
-### -Sueño REM
+## Conclusions and analisys
+### -REM Sleep
 
-A diferencia del sueño profundo y el ligero, el sueño REM apenas se ve afectado por factores externos, incluso tiende a tener la misma duración independientemente de la duración del sueño.
+Unlike deep sleep and light sleep, REM sleep is hardly affected by external factors and tends to have the same duration regardless of the total length of sleep.
 
 ![density](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_metrics.png)
 ![density_percentual](https://github.com/jfnevado/Sleep-study/blob/master/plots/density_plot_sleep_percentual.png)
 ![kdrem](https://github.com/jfnevado/Sleep-study/blob/master/plots/kderem.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot1.png)
 
-### -Sueño profundo y ligero
+### -Deep and Light Sleep
 
-Por otro lado el sueño profundo y el ligero son inversamente proporcionales, mostrando una correlación enorme.
+On the other hand, deep sleep and light sleep are inversely proportional, showing a significant correlation.
 
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot2.png)
 ![lmplot](https://github.com/jfnevado/Sleep-study/blob/master/plots/lmplot3.png)
 
-### -Factores externos
+### -External factors
 
-Como influyen los factores externos en el sueño, no sin antes recordar que el sueño REM prácticamente no se ve afectado por ellos, pero si el sueño profundo y ligero, que estan directamente relacionados, al igual que la cantidad de interrupciones del sueño.
+How external factors affect sleep, having in mind that REM sleep is hardly affected by them, but deep and light sleep are directly related, as well as the number of sleep interruptions.
 
-Así es como influyen en la calidad de sueño los siguientes factores externos:
+These are the external factors that affect sleep quality:
 
 #### Alcohol:
- - Es el que más afecta a la calidad de sueño.
- - Reduce considerablemente el sueño profundo, en beneficio del sueño ligero.
- - Aumenta la cantidad de interrupciones del sueño.
+ - It is the one that most affects sleep quality.
+ - It considerably reduces deep sleep, in favor of light sleep.
+ - It increases the number of sleep interruptions.
 
 ![alcohol](https://github.com/jfnevado/Sleep-study/blob/master/plots/alcohol.png)
-#### Tabaco:
- - Aumenta las interrupciones del sueño en la misma medida que el alcohol.
- - Reduce el sueño profundo, en menor medida que el alcohol.
+#### Tobacco:
+ - It increases sleep interruptions to the same extent as alcohol.
+ - It reduces deep sleep, to a lower extent than alcohol.
 
 ![tabaco](https://github.com/jfnevado/Sleep-study/blob/master/plots/smoking.png)
-#### Cafeína:
- - Contraintuitivamente mejora el sueño, aunque esto puede deberse a que la muestra de consumidores de café es muy 
+#### Caffeine:
+ - Counterintuitively, it improves sleep, although this may be due to coffee drinkers developing a certain tolerance, although it is most likely an error due to the small sample of coffee consumers.
 
 ![cafeina](https://github.com/jfnevado/Sleep-study/blob/master/plots/caffeine.png)
-#### Ejercicio:
- - Tiene un efecto muy positivo con la mejora del sueño.
- - Reduce los despertares y aumenta el sueño profundo.
- - La diferencia se hace realmente notable en la gente que practica mucho deporte.
- - Aún así, en general, su impacto no es tan significativo como el del alcohol.
+#### Exercise:
+ - It has a very positive effect on sleep improvement.
+ - It reduces awakenings and increases deep sleep.
+ - The difference is really noticeable in people who exercise a lot.
+ - However, overall, its impact is not as significant as that of alcohol.
 
 ![ejercicio](https://github.com/jfnevado/Sleep-study/blob/master/plots/exercise.png)
 
-**Correlación**
+**Correlation**
 ![correlacion_externa](https://github.com/jfnevado/Sleep-study/blob/master/plots/externalcorrelation.png)
 
-**Despertares**
+**Awakenings**
 ![despertares](https://github.com/jfnevado/Sleep-study/blob/master/plots/awakenings_external.png)
 
-### -Factores demográficos
+### -Demographic factors
 
-He creado gruops de edad para sacar conclusiones más relevantes, diferenciando menores de 20, de 20 a 40, de 40 a 60 y mayores de 60.
+I have created age groups to draw more relevant conclusions, differentiating those under 20, from 20 to 40, from 40 to 60, and those over 60.
 
-Los que más duermen son los menores de 20, que a su vez son los menos eficientes. Por el contrario tenemos a la franja entre los 40 y 60 años, que son los que menos duermen y los más eficaces.
+Those under 20 sleep the most, but they are also the least efficient. On the contrary, we have the age group between 40 and 60, who sleep the least but are the most effective.
 
 ![edad](https://github.com/jfnevado/Sleep-study/blob/master/plots/age.png)
 
-Por género no hay ninguna diferencia.
+There is no difference by gender.
 ![genero](https://github.com/jfnevado/Sleep-study/blob/master/plots/gender.png)
 
-### -Factores temporales
+### -Temporal factors
 
-En cuanto a la importancia del día podemos ver como el lunes es el día que más se duerme, y el viernes el que menos. En cuanto a eficiencia destaca el sábado.
+Regarding the importance of the day, we can see that Monday is the day when people sleep the most, and Friday is the day when people sleep the least. In terms of efficiency, Saturday stands out.
 
 ![día](https://github.com/jfnevado/Sleep-study/blob/master/plots/day.png)
 
-### -Generales
+### -General factors
 
-Vamos a analizar la mediana al ser mas representativa de los datos.
+Let's analyze the median as it is more representative of the data.
 
-La eficiencia del sueño es del  82.0%.
+Sleep efficiency is 82.0%.
 
-Duración del sueño 7 horas y 30 minutos, siendo 1 hora y 41 minutos de sueño REM,
-4 horas y 16 minutos de sueño profundo y finalmente, 1 hora y 22 minutos de sueño ligero.
- 
-Durante este tiempo lo normal es que se produzcan 1.0 interrupciones del sueño, pasando
-1 hora y 17 minutos despiertos.
+Sleep duration is 7 hours and 30 minutes, with 1 hour and 41 minutes of REM sleep,
+4 hours and 16 minutes of deep sleep and finally, 1 hour and 22 minutes of light sleep.
 
-Buscando como mejorar la eficiencia de nuestro sueño, y tener el mejor descanso posible, podemos ver que la franja horaria en la que mejor se descansa es entre las 7 y 8 horas. Podemos observar como a partir de las 8 horas se produce un decrimento en la calidad del sueño, por lo que aumentar las horas de sueño no siempre tiene porque ser beneficioso. 
+During this time, it is normal to experience 1.0 interruptions in sleep, spending
+1 hour and 17 minutes awake.
+
+Looking for ways to improve the efficiency of our sleep and have the best possible rest, we can see that the time slot in which we sleep best is between 7 and 8 hours. We can observe that after 8 hours, there is a decrease in the quality of sleep, so increasing the hours of sleep may not always be beneficial.
 
 ![eficiciencia-tiempo](https://github.com/jfnevado/Sleep-study/blob/master/plots/kdesleep.png)
 
@@ -129,10 +129,10 @@ Buscando como mejorar la eficiencia de nuestro sueño, y tener el mejor descanso
 ## [Dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.pdf)
 ![dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.png)
 
-## [Archivo SQL](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
+## [SQL file](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
 
-## [Archivo Python](https://github.com/jfnevado/Sleep-study/blob/master/main.ipynb)
-## Paleta de color
+## [Python file](https://github.com/jfnevado/Sleep-study/blob/master/main.ipynb)
+## Color palette
 ![color_palette](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/colorpalette.png)
 
 ## Run Locally
