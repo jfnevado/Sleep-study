@@ -1,4 +1,4 @@
-# Sleep Analisys
+# Sleep Analysis
 
 ## Author
 [@jfnevado](https://github.com/jfnevado)
@@ -6,7 +6,7 @@ Para acceder a la versión en Español ---> [README](https://github.com/jfnevado
 
 ## Introduction 
 
-The idea of this analisys comes in mind after reading the book Saludable Mente of Marcos Vázquez, book which i recommend. The book discusses various topics related to brain health and emphasizes the importance of getting a good night's sleep for physical and psychological well-being. This piqued my curiosity and led me to want to confirm the points made in the book, learn more about sleep and see how it is affected by external factors.
+The idea of this analysis comes in mind after reading the book Saludable Mente of Marcos Vázquez, book which i recommend. The book discusses various topics related to brain health and emphasizes the importance of getting a good night's sleep for physical and psychological well-being. This piqued my curiosity and led me to want to confirm the points made in the book, learn more about sleep and see how it is affected by external factors.
 
 I wanted to clarify that I cannot verify the quality of the data and its origin. However, the results are consistent with our knowledge about sleep.
 
@@ -40,7 +40,7 @@ During the data transformation, I created new columns to calculate the "net" sle
   - [Python](#archivo-python)
   - [PowerBI](#dashboard)
 
-## Conclusions and analisys
+## Conclusions and analysis
 ### -REM Sleep
 
 Unlike deep sleep and light sleep, REM sleep is hardly affected by external factors and tends to have the same duration regardless of the total length of sleep.
