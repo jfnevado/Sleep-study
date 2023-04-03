@@ -126,8 +126,8 @@ Looking for ways to improve the efficiency of our sleep and have the best possib
 ![eficiciencia-tiempo](https://github.com/jfnevado/Sleep-study/blob/master/plots/kdesleep.png)
 
 
-## [Dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.pdf)
-![dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard.png)
+## [Dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard_eng.pdf)
+![dashboard](https://github.com/jfnevado/Sleep-study/blob/master/dashboard/dashboard_eng.png)
 
 ## [SQL file](https://github.com/jfnevado/Sleep-study/blob/master/Sleep_querys.sql)
 
